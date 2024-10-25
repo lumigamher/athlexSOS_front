@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimización de Sustituciones con IA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">StatsBomb - Sustituciones Óptimas</div>
+        <div class="nav-links">
+            <a href="#">Inicio</a>
+            <a href="#about">Acerca de</a>
+            <a href="#contact">Contacto</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Optimización de Sustituciones</h1>
+        <form id="input-form">
+            <div class="form-group">
+                <label for="minute">Minuto Actual del Partido:</label>
+                <input type="number" id="minute" name="minute" min="0" max="120" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="fatigue">Nivel de Fatiga del Jugador (0-100):</label>
+                <input type="number" id="fatigue" name="fatigue" min="0" max="100" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="performance">Desempeño del Jugador (0-100):</label>
+                <input type="number" id="performance" name="performance" min="0" max="100" required>
+            </div>
+
+            <button type="button" onclick="checkSubstitution()">Recomendar Sustitución</button>
+        </form>
+        <div id="recommendation" class="recommendation-box"></div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2024 StatsBomb. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
