@@ -71,7 +71,7 @@ button:hover {
     background-color: #218838;
 }
 
-#recommendation {
+#recommendation, #team-performance {
     margin-top: 25px;
     padding: 15px;
     background-color: #f8f9fa;
